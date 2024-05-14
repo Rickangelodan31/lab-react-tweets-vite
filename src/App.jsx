@@ -2,6 +2,15 @@ import "./App.css";
 import Tweet from "./components/Tweet";
 
 const tweetsArray = [
+  // {
+  //   userName: "Ironhack",
+  //   userHandle: "ironhack",
+  //   userImage:
+  //     "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg",
+  //   timestamp: "Nov 30, 2020",
+  //   message:
+  //     "On December 7th, we will be hosting a #webinar that will introduce you to #SQL! Are you ready? 🚀",
+  // },
   {
     user: {
       name: "Thoughts of Dog®",
@@ -40,7 +49,10 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={tweetsArray[0]} />
+      <Tweet tweet={tweetsArray[1]} />
+      <Tweet tweet={tweetsArray[2]} />
+   
     </div>
   );
 }
